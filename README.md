@@ -16,3 +16,56 @@
 [![](https://visitcount.itsvg.in/api?id=nirureddy8&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+
+
+
+/*
+ +-------------------------+
+ |       User Module       |
+ +-------------------------+
+ |                         |
+ | 1. User Registration    | 
+ | 2. Key Generation       |  
+ | 3. Communication Init   |
+ |                         |
+ +-----------+-------------+
+             |
+             |
+     +-------+-------+             +-----------------------------+
+     | Key Generation|             |      Blockchain Module      |
+     +---------------+             +-----------------------------+
+     | 1. Generate   |             |                             |
+     | lightweight   |             | 1. Store Public Key         |
+     | public-private|             | 2. Retrieve Peer Key        |
+     | key pair      |<----------->| 3. Verify Key Ownership     |
+     +---------------+             +-----------------------------+
+             |
+             |
+     +-------+-------+
+     |   Key Storage  |
+     +---------------+
+     | 1. Store public|
+     | key on         |
+     | blockchain     |
+     +---------------+
+             |
+             |
+     +-------+-------+
+     | Communication  |
+     +---------------+
+     | 1. Encrypt/    |
+     | Decrypt        |
+     | Messages       |
+     +---------------+
+             |
+             |
+     +-------+-------+
+     | Blockchain    |
+     | Interaction   |
+     +---------------+
+     | 1. Retrieve   |
+     | Peer Public   |
+     | Key           |
+     +---------------+
+*/
